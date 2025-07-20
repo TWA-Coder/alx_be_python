@@ -11,29 +11,28 @@ match priority:
     case "high":
         reminder_message = f"Reminder: '{task}' is a high priority task"
         if time_bound == "yes":
-            reminder_message += immediate_attention_suffix
+            print(f"{reminder_message}{immediate_attention_suffix}")
         else:
             # For high priority but not time-bound, still imply importance
-            reminder_message += "."
+            print(f"{reminder_message}.")
     case "medium":
         reminder_message = f"Reminder: '{task}' is a medium priority task"
         if time_bound == "yes":
-            reminder_message += immediate_attention_suffix
+            print(f"{reminder_message}{immediate_attention_suffix}")
         else:
             # For medium priority but not time-bound, still imply importance
-            reminder_message += "."
+            print("{reminder_message}.")
     case "low":
         reminder_message = f"Note: '{task}' is a low priority task"
         if time_bound == "yes":
             # Even if low priority, if time-bound, it needs attention
-            reminder_message += immediate_attention_suffix
+            print(f"{reminder_message}{immediate_attention_suffix}")
         else:
-            reminder_message += low_priority_non_time_bound_suffix
+            print(f"{reminder_message}{low_priority_non_time_bound_suffix}")
     case _:
         # Handle invalid priority input
-        reminder_message = "Error: Invalid priority entered. Please use 'high', 'medium', or 'low'."
+       print("Invalid user input")
 
-# Provide a Customized Reminder:
-print(reminder_message)
+
   
   

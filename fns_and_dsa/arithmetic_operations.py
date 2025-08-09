@@ -1,17 +1,19 @@
 def perform_operation(num1,num2,operation):
     if operation == "add":
-        sum = num1 + num2
-        return sum
+        ans = num1 + num2
+        
     elif operation == "subtract":
-        sub = num1 - num2
-        return sub
+        ans = num1 - num2
+        
     elif operation == "multiply":
-        mult = num1 * num2
-        return mult
+        ans = num1 * num2
+        
     elif operation == "divide":
         if num2 <= 0:
-            print("the second number must be greeter than zero")
+            ans = "the second number must be greeter than zero"
         else:
-            div = num1 / num2
-            return div
-    
+            ans = num1 / num2
+    else:
+        ans = "Invalid input"
+
+    return ans

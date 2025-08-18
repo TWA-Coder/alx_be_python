@@ -1,4 +1,5 @@
 Project Objectives:
+
 By the end of this project, you should be able to:
 
 Explain the core concepts of OOP: classes, objects, encapsulation, and abstraction.

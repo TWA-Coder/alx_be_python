@@ -22,7 +22,7 @@ class TestCalculator(unittest.TestCase):
 
         self.assertEqual(self.calc.add(4.0, 5.7), 9.7)
 
-    def test_subtract(self):
+    def test_subtraction(self):
 
         self.assertEqual(self.calc.subtract(9, 4), 5)
 

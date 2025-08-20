@@ -34,7 +34,7 @@ class TestCalculator(unittest.TestCase):
 
         self.assertEqual(self.calc.subtract(0, 4), -4)
 
-    def test_multiply(self):
+    def test_multiplication(self):
 
         self.assertEqual(self.calc.multiply(0, 4), 0)
 
@@ -46,7 +46,7 @@ class TestCalculator(unittest.TestCase):
 
         self.assertEqual(self.calc.multiply(-6, 4), -24)
 
-    def test_divide(self):
+    def test_division(self):
 
         self.assertEqual(self.calc.divide(4, 0), None)
 

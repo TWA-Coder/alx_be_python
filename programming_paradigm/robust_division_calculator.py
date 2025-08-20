@@ -1,4 +1,5 @@
 def safe_divide(numerator, denominator):
+
     try:
         fl_numerator = float(numerator)
         fl_denominator = float(denominator)
@@ -11,6 +12,8 @@ def safe_divide(numerator, denominator):
     except ValueError:
         print("Error: Please enter numeric values only.")
     
+
+
         
        
             

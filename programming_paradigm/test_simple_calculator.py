@@ -9,7 +9,7 @@ class TestCalculator(unittest.TestCase):
         self.calc = SimpleCalculator()
 
     
-    def test_addition_positive(self):
+    def test_addition(self):
 
         self.assertEqual(self.calc.add(4, 5), 9)
 
@@ -22,7 +22,7 @@ class TestCalculator(unittest.TestCase):
 
         self.assertEqual(self.calc.add(4.0, 5.7), 9.7)
 
-    def test_subtract_positive(self):
+    def test_subtract(self):
 
         self.assertEqual(self.calc.subtract(9, 4), 5)
 
@@ -34,7 +34,7 @@ class TestCalculator(unittest.TestCase):
 
         self.assertEqual(self.calc.subtract(0, 4), -4)
 
-    def test_multiply_zero(self):
+    def test_multiply(self):
 
         self.assertEqual(self.calc.multiply(0, 4), 0)
 
@@ -46,7 +46,7 @@ class TestCalculator(unittest.TestCase):
 
         self.assertEqual(self.calc.multiply(-6, 4), -24)
 
-    def test_divide_zero(self):
+    def test_divide(self):
 
         self.assertEqual(self.calc.divide(4, 0), None)
 

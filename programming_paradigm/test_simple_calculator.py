@@ -9,16 +9,16 @@ class TestCalculator(unittest.TestCase):
         self.calc = SimpleCalculator()
 
     
-    def test_add_positive(self):
+    def test_addition_positive(self):
 
         self.assertEqual(self.calc.add(4, 5), 9)
 
 
-    def test_add_negative(self):
+    def test_addition_negative(self):
 
         self.assertEqual(self.calc.add(4, -5), -1)
 
-    def test_add_float(self):
+    def test_addition_float(self):
 
         self.assertEqual(self.calc.add(4.0, 5.7), 9.7)
 

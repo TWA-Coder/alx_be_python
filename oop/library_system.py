@@ -17,11 +17,11 @@ class EBook(Book):
         return f"EBook: {self.title} by {self.author}, File size: {self.file_size}"
 
 class PrintBook(Book):
-    def __init__(self,title:str, author:str, pagecount:int):
+    def __init__(self,title:str, author:str, page_count:int):
         super().__init__(title, author)
-        self.pagecount = pagecount
+        self.page_count = page_count
     def __str__(self):
-        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.pagecount}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 class Library:
     def __init__(self, books=None):
         if books is None:
